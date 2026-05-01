@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "UV Protection Sunglasses",
+        "brand": "SunShade",
+        "price": 15,
+        "rating": 4.7,
+        "stock": 10,
+        "description": "Stylish UV protection sunglasses perfect for summer outings. Blocks 99% of harmful UV rays while keeping you fashionable.",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
+        "category": "Accessories",
+        "discount": 20,
+        "isNew": false,
+        "isHotDeal": true,
+        "colors": [
+            "Black",
+            "Brown",
+            "Blue"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Beach Flip Flops",
+        "brand": "SandWalk",
+        "price": 12,
+        "rating": 4.5,
+        "stock": 25,
+        "description": "Comfortable and durable flip flops for beach days. Non-slip sole with soft footbed for all-day comfort.",
+        "image": "https://images.unsplash.com/photo-1527866959252-deab85ef7d1b?w=500&h=500&fit=crop",
+        "category": "Footwear",
+        "discount": 15,
+        "isNew": false,
+        "isHotDeal": true,
+        "colors": [
+            "Black",
+            "White",
+            "Navy"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Summer Straw Hat",
+        "brand": "SunStyle",
+        "price": 18,
+        "rating": 4.8,
+        "stock": 8,
+        "description": "Wide brim straw hat for ultimate sun protection. Breathable and lightweight, perfect for beach vacations.",
+        "image": "https://images.unsplash.com/photo-1522878129833-838a704da0e6?w=500&h=500&fit=crop",
+        "category": "Accessories",
+        "discount": 25,
+        "isNew": true,
+        "isHotDeal": false,
+        "colors": [
+            "Natural",
+            "Black",
+            "Beige"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Cooling Beach Towel",
+        "brand": "ChillWave",
+        "price": 10,
+        "rating": 4.6,
+        "stock": 30,
+        "description": "Microfiber cooling towel, perfect for beach, gym, or outdoor activities. Instantly cools when wet.",
+        "image": "https://images.unsplash.com/photo-1524484056689-1d56918c34f0?w=500&h=500&fit=crop",
+        "category": "Beach Essentials",
+        "discount": 10,
+        "isNew": false,
+        "isHotDeal": true,
+        "colors": [
+            "Blue",
+            "Green",
+            "Pink"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Portable Water Bottle",
+        "brand": "HydroFlow",
+        "price": 20,
+        "rating": 4.9,
+        "stock": 15,
+        "description": "Insulated stainless steel water bottle. Keeps drinks cold for 24 hours or hot for 12 hours. Eco-friendly and durable.",
+        "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
+        "category": "Accessories",
+        "discount": 30,
+        "isNew": true,
+        "isHotDeal": true,
+        "colors": [
+            "Silver",
+            "Black",
+            "Rose Gold"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Sunscreen SPF 50",
+        "brand": "SunProtect",
+        "price": 14,
+        "rating": 4.7,
+        "stock": 20,
+        "description": "Broad spectrum SPF 50 sunscreen. Water-resistant and non-greasy formula for all-day protection.",
+        "image": "https://images.unsplash.com/photo-1556229174-5e42a09e45b8?w=500&h=500&fit=crop",
+        "category": "Skincare",
+        "discount": 15,
+        "isNew": false,
+        "isHotDeal": false,
+        "colors": [
+            "White"
+        ]
+    }
+]
