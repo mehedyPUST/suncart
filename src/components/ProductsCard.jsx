@@ -23,7 +23,7 @@ const ProductsCard = ({ product }) => {
                 </div>
                 <div className='font-bold text-lg'>${product.price}</div>
 
-                <Link href={`/product/${product.id}`}>
+                <Link href={`/all-products/${product.id}`}>
                     <button className='w-full py-1.5 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition'>
                         View Details
                     </button>
