@@ -13,10 +13,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className="border-b px-2">
-            <nav className=" flex justify-between items-center  py-3 w-11/12 mx-auto sticky z-50">
+        <div className="border-b sticky top-0 z-50 bg-white">
+            <nav className="flex justify-between items-center py-3 w-11/12 mx-auto">
                 <div className="flex gap-2 items-center">
-
                     <h3 className="font-black text-lg">SunCart</h3>
                 </div>
 
@@ -27,7 +26,6 @@ const Navbar = () => {
                     <li>
                         <Link href={"/all-products"}>Products</Link>
                     </li>
-
                     <li>
                         <Link href={"/profile"}>Profile</Link>
                     </li>
@@ -35,7 +33,7 @@ const Navbar = () => {
 
                 <div className="flex gap-4">
                     {!user && (
-                        <ul className="flex items-center  text-sm gap-5">
+                        <ul className="flex items-center text-sm gap-5">
                             <li>
                                 <Link href={"/signup"}>Register</Link>
                             </li>
