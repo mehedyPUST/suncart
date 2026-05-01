@@ -11,7 +11,7 @@ const AllProductsPage = async () => {
     return (
         <div>
 
-            <h2 className='text-2xl font-bold mt-5 mb-2'>Popular Products</h2>
+            <h2 className='text-2xl font-bold mt-5 mb-2'>All Products</h2>
 
             <div className='grid grid-cols-3 gap-5'>
                 {
