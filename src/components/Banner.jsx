@@ -382,7 +382,7 @@ const Banner = () => {
     };
 
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden mt-4 md:mt-10">
             {/* Main Slider Container */}
             <div className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden">
                 {slides.map((slide, index) => (
