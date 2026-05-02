@@ -15,6 +15,7 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 import { GrGoogle } from "react-icons/gr";
 import { MdEmail, MdLock, MdPerson, MdImage } from "react-icons/md";
 
