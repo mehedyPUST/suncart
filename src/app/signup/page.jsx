@@ -54,7 +54,7 @@ export default function SignUpPage() {
 
             toast.dismiss(loadingToast);
 
-            toast.success("🎉 Account created successfully! Welcome aboard.");
+            toast.success(" Account created successfully! Welcome to SunCart.");
 
             // small delay for better UX
             setTimeout(() => {
