@@ -37,18 +37,18 @@ const AllProductsPage = async () => {
     const products = await res.json();
 
     return (
-        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated animate__fadeInDown">
+        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Page Header */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-12 animate__animated animate__fadeInDown">
                     <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                         <span>🛍️</span>
                         <span>Shop Collection</span>
                     </div>
-                    <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent mb-4">
+                    <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent mb-4">
                         All Products
                     </h1>
-                    <div className="w-24 h-1 bg-gradient-to-r from-amber-600 to-orange-500 mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-linear-to-r from-amber-600 to-orange-500 mx-auto rounded-full"></div>
                     <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
                         Discover our complete collection of summer essentials
                     </p>
