@@ -33,7 +33,7 @@ const ProductDetailsClient = ({ product }) => {
     };
     const router = useRouter();
     return (
-        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated  animate__backInUp">
+        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated  animate__backInRight">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Back Button */}
                 <button
