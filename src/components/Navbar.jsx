@@ -101,8 +101,8 @@ const Navbar = () => {
                         <Link
                             href={"/"}
                             className={`relative transition-colors ${isActive('/')
-                                    ? 'text-blue-600 font-semibold'
-                                    : 'text-gray-600 hover:text-blue-600'
+                                ? 'text-blue-600 font-semibold'
+                                : 'text-gray-600 hover:text-blue-600'
                                 }`}
                         >
                             Home
@@ -115,8 +115,8 @@ const Navbar = () => {
                         <Link
                             href={"/all-products"}
                             className={`relative transition-colors ${isActive('/all-products')
-                                    ? 'text-blue-600 font-semibold'
-                                    : 'text-gray-600 hover:text-blue-600'
+                                ? 'text-blue-600 font-semibold'
+                                : 'text-gray-600 hover:text-blue-600'
                                 }`}
                         >
                             Products
@@ -129,8 +129,8 @@ const Navbar = () => {
                         <Link
                             href={"/profile"}
                             className={`relative transition-colors ${isActive('/profile')
-                                    ? 'text-blue-600 font-semibold'
-                                    : 'text-gray-600 hover:text-blue-600'
+                                ? 'text-blue-600 font-semibold'
+                                : 'text-gray-600 hover:text-blue-600'
                                 }`}
                         >
                             Profile
@@ -148,8 +148,8 @@ const Navbar = () => {
                                 <Link
                                     href={"/signup"}
                                     className={`relative transition-colors ${isActive('/signup')
-                                            ? 'text-blue-600 font-semibold'
-                                            : 'text-gray-600 hover:text-blue-600'
+                                        ? 'text-blue-600 font-semibold'
+                                        : 'text-gray-600 hover:text-blue-600'
                                         }`}
                                 >
                                     Register
@@ -162,8 +162,8 @@ const Navbar = () => {
                                 <Link
                                     href={"/signin"}
                                     className={`relative transition-colors ${isActive('/signin')
-                                            ? 'text-blue-600 font-semibold'
-                                            : 'text-gray-600 hover:text-blue-600'
+                                        ? 'text-blue-600 font-semibold'
+                                        : 'text-gray-600 hover:text-blue-600'
                                         }`}
                                 >
                                     Login
