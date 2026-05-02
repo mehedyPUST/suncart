@@ -130,7 +130,6 @@
 // }
 
 
-
 "use client";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
@@ -150,7 +149,6 @@ import { GrGoogle } from "react-icons/gr";
 import { MdEmail, MdLock, MdPerson, MdImage } from "react-icons/md";
 
 export default function SignUpPage() {
-
     const router = useRouter()
 
     const onSubmit = async (e) => {
@@ -204,22 +202,26 @@ export default function SignUpPage() {
                                 {/* Name Field */}
                                 <TextField isRequired name="name" type="text">
                                     <Label className="text-gray-700 font-semibold">Full Name</Label>
-                                    <Input
-                                        placeholder="Enter your name"
-                                        startContent={<MdPerson className="text-gray-400" size={18} />}
-                                        className="border-amber-100 focus:border-amber-400"
-                                    />
+                                    <div className="relative">
+                                        <MdPerson className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+                                        <Input
+                                            placeholder="Enter your name"
+                                            className="pl-10 border-amber-100 focus:border-amber-400 w-full"
+                                        />
+                                    </div>
                                     <FieldError />
                                 </TextField>
 
                                 {/* Image URL Field */}
                                 <TextField isRequired name="image" type="text">
                                     <Label className="text-gray-700 font-semibold">Profile Image URL</Label>
-                                    <Input
-                                        placeholder="https://example.com/avatar.jpg"
-                                        startContent={<MdImage className="text-gray-400" size={18} />}
-                                        className="border-amber-100 focus:border-amber-400"
-                                    />
+                                    <div className="relative">
+                                        <MdImage className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+                                        <Input
+                                            placeholder="https://example.com/avatar.jpg"
+                                            className="pl-10 border-amber-100 focus:border-amber-400 w-full"
+                                        />
+                                    </div>
                                     <FieldError />
                                 </TextField>
 
@@ -236,11 +238,13 @@ export default function SignUpPage() {
                                     }}
                                 >
                                     <Label className="text-gray-700 font-semibold">Email</Label>
-                                    <Input
-                                        placeholder="john@example.com"
-                                        startContent={<MdEmail className="text-gray-400" size={18} />}
-                                        className="border-amber-100 focus:border-amber-400"
-                                    />
+                                    <div className="relative">
+                                        <MdEmail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+                                        <Input
+                                            placeholder="john@example.com"
+                                            className="pl-10 border-amber-100 focus:border-amber-400 w-full"
+                                        />
+                                    </div>
                                     <FieldError />
                                 </TextField>
 
@@ -264,11 +268,13 @@ export default function SignUpPage() {
                                     }}
                                 >
                                     <Label className="text-gray-700 font-semibold">Password</Label>
-                                    <Input
-                                        placeholder="Enter your password"
-                                        startContent={<MdLock className="text-gray-400" size={18} />}
-                                        className="border-amber-100 focus:border-amber-400"
-                                    />
+                                    <div className="relative">
+                                        <MdLock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+                                        <Input
+                                            placeholder="Enter your password"
+                                            className="pl-10 border-amber-100 focus:border-amber-400 w-full"
+                                        />
+                                    </div>
                                     <Description className="text-gray-400">
                                         Must be at least 8 characters with 1 uppercase and 1 number
                                     </Description>
