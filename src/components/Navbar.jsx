@@ -214,16 +214,19 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { MdLogout } from "react-icons/md";
-
+import { useRouter } from "next/navigation";
 const Navbar = () => {
     const userData = authClient.useSession();
     const user = userData.data?.user;
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const router = useRouter();
+
     const handleSignOut = async () => {
         await authClient.signOut();
-    }
+        router.push("/");
+    };
 
     const isActive = (path) => {
         return pathname === path;

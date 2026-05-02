@@ -2,6 +2,7 @@
 
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
+import "animate.css";
 import {
     Button,
     Card,
@@ -57,7 +58,7 @@ export default function SignInPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 via-white to-orange-50 px-4">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 via-white to-orange-50 px-4 animate__animated animate__backInDown">
 
             <Card className="w-full max-w-md p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100">
 

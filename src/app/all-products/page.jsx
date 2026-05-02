@@ -30,13 +30,14 @@
 
 import ProductsCard from '@/components/ProductsCard';
 import React from 'react';
+import "animate.css";
 
 const AllProductsPage = async () => {
     const res = await fetch("https://suncart-gamma.vercel.app/data.json");
     const products = await res.json();
 
     return (
-        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8">
+        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated animate__fadeInDown">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Page Header */}
                 <div className="text-center mb-12">

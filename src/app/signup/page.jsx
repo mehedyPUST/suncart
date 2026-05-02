@@ -3,6 +3,7 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
+import "animate.css";
 import {
     Button,
     Card,
@@ -80,7 +81,7 @@ export default function SignUpPage() {
         }
     };
     return (
-        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8">
+        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated   animate__backInDown">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Page Header */}
                 <div className="text-center mb-8">
