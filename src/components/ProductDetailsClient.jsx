@@ -7,6 +7,7 @@ import { Heart, RotateCcw, Share2, Shield, ShoppingCart, Star, Truck } from 'luc
 import Image from 'next/image';
 import Link from 'next/link';
 import "animate.css";
+import { useRouter } from "next/navigation";
 
 const ProductDetailsClient = ({ product }) => {
     const [selectedColor, setSelectedColor] = useState(product.colors?.[0] || '');
@@ -30,21 +31,22 @@ const ProductDetailsClient = ({ product }) => {
             setQuantity(quantity - 1);
         }
     };
-
+    const router = useRouter();
     return (
-        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated  animate__backInUp">
+        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated  animate__backInUp">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Back Button */}
-                <Link href="/all-products">
-                    <button className="mb-6 flex items-center gap-2 text-gray-600 hover:text-amber-600 transition-colors">
-                        ← Back to Products
-                    </button>
-                </Link>
+                <button
+                    onClick={() => router.back()}
+                    className="mb-6 flex items-center gap-2 text-gray-600 hover:text-amber-600 transition-colors"
+                >
+                    ← Back to Previous Page
+                </button>
 
                 <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                     {/* Left Column - Image Gallery */}
                     <div className="space-y-4">
-                        <div className="relative bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl overflow-hidden group border border-amber-100">
+                        <div className="relative bg-linear-to-br from-amber-50 to-orange-50 rounded-2xl overflow-hidden group border border-amber-100">
                             {/* Main Image */}
                             <div className="relative aspect-square">
                                 <Image
@@ -62,14 +64,14 @@ const ProductDetailsClient = ({ product }) => {
 
                             {/* Discount Badge */}
                             {product.discount > 0 && (
-                                <div className="absolute top-4 left-4 bg-gradient-to-r from-amber-600 to-orange-500 text-white px-3 py-1 rounded-lg font-bold text-sm shadow-lg">
+                                <div className="absolute top-4 left-4 bg-linear-to-r from-amber-600 to-orange-500 text-white px-3 py-1 rounded-lg font-bold text-sm shadow-lg">
                                     {product.discount}% OFF
                                 </div>
                             )}
 
                             {/* Hot Deal Badge */}
                             {product.isHotDeal && (
-                                <div className="absolute top-4 right-4 bg-gradient-to-r from-red-500 to-orange-500 text-white px-3 py-1 rounded-lg font-bold text-sm animate-pulse shadow-lg">
+                                <div className="absolute top-4 right-4 bg-linear-to-r from-red-500 to-orange-500 text-white px-3 py-1 rounded-lg font-bold text-sm animate-pulse shadow-lg">
                                     🔥 Hot Deal
                                 </div>
                             )}
@@ -86,7 +88,7 @@ const ProductDetailsClient = ({ product }) => {
                         </div>
 
                         {/* Product Name */}
-                        <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
+                        <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
                             {product.name}
                         </h1>
 
@@ -133,29 +135,7 @@ const ProductDetailsClient = ({ product }) => {
                             </p>
                         </div>
 
-                        {/* Colors */}
-                        {product.colors && product.colors.length > 0 && (
-                            <div>
-                                <h3 className="font-semibold text-lg mb-3 text-gray-800">Colors</h3>
-                                <div className="flex gap-3">
-                                    {product.colors.map((color) => (
-                                        <button
-                                            key={color}
-                                            onClick={() => setSelectedColor(color)}
-                                            className={`w-10 h-10 rounded-full border-2 transition-all ${selectedColor === color
-                                                ? 'border-amber-500 ring-2 ring-amber-200 scale-110'
-                                                : 'border-gray-300 hover:scale-105'
-                                                }`}
-                                            style={{
-                                                backgroundColor: color.toLowerCase(),
-                                                boxShadow: color === 'White' ? 'inset 0 0 0 1px #ddd' : 'none'
-                                            }}
-                                            title={color}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        )}
+
 
                         {/* Quantity Selector */}
                         <div>
@@ -182,7 +162,7 @@ const ProductDetailsClient = ({ product }) => {
 
                         {/* Action Buttons */}
                         <div className="flex gap-4 pt-4">
-                            <button className="flex-1 bg-gradient-to-r from-amber-600 to-orange-500 text-white py-3 rounded-xl font-semibold hover:from-amber-700 hover:to-orange-600 transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-md">
+                            <button className="flex-1 bg-linear-to-r from-amber-600 to-orange-500 text-white py-3 rounded-xl font-semibold hover:from-amber-700 hover:to-orange-600 transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-md">
                                 <ShoppingCart size={20} />
                                 Add to Cart
                             </button>
