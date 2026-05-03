@@ -8,7 +8,7 @@ const PopularProducts = async () => {
     const popularProducts = products.slice(0, 3);
 
     return (
-        <div className="mt-6 md:mt-10 max-w-7xl mx-auto px-4">
+        <div className="mt-6 md:mt-10  mx-auto px-4">
 
             <h2 className="text-xl md:text-2xl font-bold mb-4">
                 Popular Products

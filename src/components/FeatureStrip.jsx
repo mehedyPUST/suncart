@@ -29,7 +29,7 @@ const features = [
 const FeatureStrip = () => {
     return (
         <div className="bg-linear-to-r from-amber-50 to-orange-50 py-4 md:py-6 mt-5">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className=" mx-auto px-4">
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {features.map((item, index) => {
