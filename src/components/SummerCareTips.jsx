@@ -57,7 +57,7 @@ const SummerCareTips = () => {
   ];
 
   return (
-    <section className="w-full overflow-hidden bg-gradient-to-r from-amber-50 via-white to-amber-50 py-16 md:py-24">
+    <section className="w-full overflow-hidden bg-gradient-to-r from-amber-50 via-white to-amber-50 py-16 md:py-24 mt-5 md:mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
