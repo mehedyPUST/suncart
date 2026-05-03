@@ -1,31 +1,4 @@
-// import ProductsCard from '@/components/ProductsCard';
-// import React from 'react';
 
-
-// const AllProductsPage = async () => {
-
-//     const res = await fetch("https://suncart-gamma.vercel.app/data.json")
-//     const products = await res.json()
-
-//     console.log(products)
-//     return (
-//         <div>
-
-//             <h2 className='text-2xl font-bold mt-5 mb-2'>All Products</h2>
-
-//             <div className='grid grid-cols-3 gap-5'>
-//                 {
-//                     products.map(product => < ProductsCard product={product} key={product.id} />
-
-
-//                     )
-//                 }
-//             </div>
-//         </div >
-//     );
-// };
-
-// export default AllProductsPage;
 
 
 import ProductsCard from '@/components/ProductsCard';
@@ -37,7 +10,7 @@ const AllProductsPage = async () => {
     const products = await res.json();
 
     return (
-        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 ">
+        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 mb-5 md:mb-10 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Page Header */}
                 <div className="text-center mb-12 animate__animated animate__fadeInDown">
@@ -55,7 +28,7 @@ const AllProductsPage = async () => {
                 </div>
 
                 {/* Products Grid - Responsive */}
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6 md:gap-8'>
                     {products.map((product) => (
                         <ProductsCard product={product} key={product.id} />
                     ))}
