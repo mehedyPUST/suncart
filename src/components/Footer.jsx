@@ -91,13 +91,13 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="flex items-center gap-3">
-                            <MdPhone className="text-amber-400 flex-shrink-0" size={18} />
+                            <MdPhone className="text-amber-400 shrink-0" size={18} />
                             <a href={`tel:${footerInfo.phone}`} className="text-gray-300 hover:text-amber-400 text-sm transition-colors">
                                 {footerInfo.phone}
                             </a>
                         </div>
                         <div className="flex items-center gap-3">
-                            <IoTimeOutline className="text-amber-400 flex-shrink-0" size={18} />
+                            <IoTimeOutline className="text-amber-400 shrink-0" size={18} />
                             <span className="text-gray-300 text-sm">{footerInfo.hours}</span>
                         </div>
                     </div>

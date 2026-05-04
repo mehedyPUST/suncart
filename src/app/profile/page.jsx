@@ -1,41 +1,4 @@
 
-// "use client"
-
-// import { UpdateUserModal } from "@/components/UpdateUserModal";
-// import { authClient } from "@/lib/auth-client";
-// import { Card } from "@heroui/card";
-// import { Avatar } from "@heroui/react";
-
-// const ProfilePage = () => {
-//     const userData = authClient.useSession();
-//     const user = userData.data?.user;
-
-
-//     return (
-//         <div>
-//             <Card className="max-w-96 mx-auto flex flex-col items-center border mt-5 mb-5 p-5">
-
-//                 <Avatar className="h-25 w-25">
-//                     <Avatar.Image
-//                         alt={user?.name || "User"}
-//                         src={user?.image}
-//                         referrerPolicy="no-referrer"
-//                     />
-//                     <Avatar.Fallback>{user?.name?.charAt(0) || "U"}</Avatar.Fallback>
-//                 </Avatar>
-//                 <h2>{user?.name}</h2>
-//                 <p>{user?.email}</p>
-
-//                 <UpdateUserModal />
-//             </Card>
-//         </div>
-//     );
-// };
-
-// export default ProfilePage;
-
-
-
 "use client"
 
 import { UpdateUserModal } from "@/components/UpdateUserModal";
@@ -49,7 +12,7 @@ const ProfilePage = () => {
     const user = userData.data?.user;
 
     return (
-        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated animate__backInRight">
+        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated animate__backInRight">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Page Header */}
                 <div className="text-center mb-8">
@@ -57,10 +20,10 @@ const ProfilePage = () => {
                         <span>👤</span>
                         <span>My Account</span>
                     </div>
-                    <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent mb-4">
+                    <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent mb-4">
                         Profile
                     </h1>
-                    <div className="w-24 h-1 bg-gradient-to-r from-amber-600 to-orange-500 mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-linear-to-r from-amber-600 to-orange-500 mx-auto rounded-full"></div>
                 </div>
 
                 {/* Profile Card */}
@@ -69,7 +32,7 @@ const ProfilePage = () => {
                         <div className="p-6 md:p-8 flex flex-col items-center">
                             {/* Avatar Section */}
                             <div className="relative mb-4">
-                                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full blur-lg opacity-50"></div>
+                                <div className="absolute inset-0 bg-linear-to-r from-amber-400 to-orange-500 rounded-full blur-lg opacity-50"></div>
                                 <Avatar className="h-28 w-28 md:h-32 md:w-32 border-4 border-amber-100 relative z-10">
                                     <Avatar.Image
                                         alt={user?.name || "User"}
@@ -77,7 +40,7 @@ const ProfilePage = () => {
                                         referrerPolicy="no-referrer"
                                         className="object-cover"
                                     />
-                                    <Avatar.Fallback className="bg-gradient-to-r from-amber-600 to-orange-500 text-white text-2xl">
+                                    <Avatar.Fallback className="bg-linear-to-r from-amber-600 to-orange-500 text-white text-2xl">
                                         {user?.name?.charAt(0) || "U"}
                                     </Avatar.Fallback>
                                 </Avatar>
@@ -116,7 +79,7 @@ const ProfilePage = () => {
 
                             {/* Divider */}
                             <div className="w-full my-6">
-                                <div className="h-px bg-gradient-to-r from-transparent via-amber-200 to-transparent"></div>
+                                <div className="h-px bg-linear-to-r from-transparent via-amber-200 to-transparent"></div>
                             </div>
 
                             {/* Update Button */}
