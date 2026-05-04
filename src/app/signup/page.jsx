@@ -81,7 +81,7 @@ export default function SignUpPage() {
         }
     };
     return (
-        <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated   animate__backInDown">
+        <div className="bg-linear-to-r from-amber-50 via-white to-amber-50 min-h-screen py-8 animate__animated   animate__backInDown">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Page Header */}
                 <div className="text-center mb-8">
@@ -89,10 +89,10 @@ export default function SignUpPage() {
                         <span>📝</span>
                         <span>Join Us Today</span>
                     </div>
-                    <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent mb-4">
+                    <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent mb-4">
                         Create Account
                     </h1>
-                    <div className="w-24 h-1 bg-gradient-to-r from-amber-600 to-orange-500 mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-linear-to-r from-amber-600 to-orange-500 mx-auto rounded-full"></div>
                     <p className="text-gray-500 mt-4">
                         Sign up for exclusive deals and summer offers
                     </p>
@@ -189,7 +189,7 @@ export default function SignUpPage() {
                                 <div className="flex gap-3 pt-2">
                                     <Button
                                         type="submit"
-                                        className="flex-1 bg-gradient-to-r from-amber-600 to-orange-500 text-white font-semibold hover:from-amber-700 hover:to-orange-600 transition-all hover:scale-105 shadow-md"
+                                        className="flex-1 bg-linear-to-r from-amber-600 to-orange-500 text-white font-semibold hover:from-amber-700 hover:to-orange-600 transition-all hover:scale-105 shadow-md"
                                     >
                                         <Check size={18} />
                                         Create Account
