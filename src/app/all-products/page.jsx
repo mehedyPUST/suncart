@@ -1,6 +1,3 @@
-
-
-
 import ProductsCard from '@/components/ProductsCard';
 import React from 'react';
 import "animate.css";
